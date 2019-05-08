@@ -1,0 +1,112 @@
+    1  yum search java
+    2  yum install java-1.8.0-openjdk-devel
+    3  java -version
+    4  cd /opt/
+    5  curl -O https://www-eu.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+    6  ls -l
+    7  gunzip apache-maven-3.6.1-bin.tar.gz
+    8  ls -l
+    9  tar xf apache-maven-3.6.1-bin.tar
+   10  ls -l
+   11  cd apache-maven-3.6.1
+   12  ls
+   13  cd bin/
+   14  ls
+   15  ./mvn -version
+   16  ls
+   17  which ls
+   18  env
+   19  ls
+   20  /usr/bin/ls
+   21  ls
+   22  pwd
+   23  export NAME="Goutham Kumar"
+   24  env
+   25  echo $NAME
+   26  cd /tmp/
+   27  echo $NAME
+   28  export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/opt/apache-maven-3.6.1/bin
+   29  echo $PATH
+   30  ls
+   31  pwd
+   32  mvn -version
+   33  cd /root
+   34  ls
+   35  ls -a
+   36  vi .bash_profile
+   37  clear
+   38  yum install -y git >/dev/null
+   39  git --version
+   40  pwd
+   41  cd /opt/
+   42  git clone https://github.com/gkdevops/maven-sample-code.git
+   43  ls -l
+   44  cd maven-sample-code/
+   45  ls
+   46  yum install -y tree >/dev/null
+   47  tree
+   48  vi src/main/java/com/flipkart/App.java
+   49  vi src/test/java/com/flipkart/AppTest.java
+   50  vi src/main/java/com/flipkart/App.java
+   51  vi src/test/java/com/flipkart/AppTest.java
+   52  vi pom.xml
+   53  vi src/test/java/com/flipkart/AppTest.java
+   54  vi pom.xml
+   55  ls
+   56  mvn compile
+   57  tree
+   58  mvn compile
+   59  mvn test-compile
+   60  tree
+   61  mvn test
+   62  mvn package
+   63  vi pom.xml
+   64  tree
+   65  mvn clean
+   66  ls
+   67  mvn clean package
+   68  cd ..
+   69  ls
+   70  git clone https://github.com/gkdevops/PetClinic.git
+   71  ls
+   72  cd PetClinic/
+   73  ls
+   74  tree
+   75  ls
+   76  cd src/
+   77  mvn package
+   78  ls
+   79  cd ..
+   80  ls
+   81  mvn package
+   82  ls
+   83  cd target/
+   84  ls
+   85  cd ..
+   86  s
+   87  ls
+   88  vi pom.xml
+   89  cd ..
+   90  ls
+   91  curl -O https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.40/bin/apache-tomcat-8.5.40.tar.gz
+   92  ls -lh
+   93  tar zxf apache-tomcat-8.5.40.tar.gz
+   94  ls -l
+   95  cd apache-tomcat-8.5.40
+   96  ls
+   97  cd bin/
+   98  ls
+   99  ./startup.sh
+  100  cd ..
+  101  ls
+  102  cd webapps/
+  103  ls
+  104  cp /opt/PetClinic/target/petclinic.war .
+  105  ls
+  106  cd ..
+  107  ls
+  108  cd bin/
+  109  ls
+  110  ./shutdown.sh
+  111  ./startup.sh
+  112  history
